@@ -28,9 +28,9 @@ while (!string.Equals(input, "fin", StringComparison.Ordinal))
                 wordCache = wordCache.Where(x => !x.Contains(word[i])).ToArray();
                 break;
             
-            // Eliminate any word that doesn't have the letters we know about
+            // Eliminate any word that doesn't have the letters we know about and any that have the right letter in the wrong place
             case 1:
-                wordCache = wordCache.Where(x => x.Contains(word[i])).ToArray();
+                wordCache = wordCache.Where(x => x.Contains(word[i]) && x.IndexOf(word[i]) != i).ToArray();
                 break;
             
             // Get the words with the letter in the right place
