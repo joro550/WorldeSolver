@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldeSolver", "WorldeSolver\WorldeSolver.csproj", "{8FE9DB78-7FE9-497B-8C3E-F3A8D8E25BAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{D2EC8962-3612-4855-BE58-5E53D45C51D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FE9DB78-7FE9-497B-8C3E-F3A8D8E25BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE9DB78-7FE9-497B-8C3E-F3A8D8E25BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE9DB78-7FE9-497B-8C3E-F3A8D8E25BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE9DB78-7FE9-497B-8C3E-F3A8D8E25BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2EC8962-3612-4855-BE58-5E53D45C51D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2EC8962-3612-4855-BE58-5E53D45C51D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2EC8962-3612-4855-BE58-5E53D45C51D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2EC8962-3612-4855-BE58-5E53D45C51D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
