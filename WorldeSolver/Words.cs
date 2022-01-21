@@ -4,16 +4,21 @@ public static class Words
 {
     private static readonly Random _rand = new();
 
-    public static string GetRandomWord()
+    public static string GetWeightedWord()
     {
-        var randomNum = _rand.Next(0, _words.Length);
-        return _words[randomNum];
+        var weightedBag = new WeightedRandomBag();
+        foreach (var word in _words) 
+            weightedBag.AddEntry(word);
+
+        return weightedBag.GetRandom();
     }
     
     public static string GetRandomWord(string[] words)
     {
-        var randomNum = _rand.Next(0, words.Length);
-        return words[randomNum];
+        var weightedBag = new WeightedRandomBag();
+        foreach (var word in words) 
+            weightedBag.AddEntry(word);
+        return weightedBag.GetRandom();
     }
 
     public static string[] GetWords() => _words;

@@ -1,6 +1,6 @@
 ﻿using WorldeSolver;
 
-var word = Words.GetRandomWord();
+var word = Words.GetWeightedWord();
 var wordCache = Words.GetWords();
 
 Console.WriteLine(word);
