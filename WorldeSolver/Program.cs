@@ -1,5 +1,21 @@
 ﻿using WorldeSolver;
 
+bool HasBeenSeen(string currentWord, int index)
+{
+    var hasBeenSeen = false;
+    var currentLetter = currentWord[index];
+    
+    for (var j = 0; j < index; j++)
+    {
+        if (currentLetter != currentWord[j]) continue;
+
+        hasBeenSeen = true;
+        break;
+    }
+
+    return hasBeenSeen;
+}
+
 var word = Words.GetWeightedWord();
 var wordCache = Words.GetWords();
 
@@ -21,6 +37,10 @@ while (!string.Equals(input, "fin", StringComparison.Ordinal))
     
     for (var i = 0; i < intValues.Length; i++)
     {
+        // If the letter has all ready appeared then ignore this one
+        if (HasBeenSeen(word, i)) 
+            continue;            
+        
         switch (intValues[i])
         {
             // Eliminate the words that contain letters that aren't in the word
